@@ -7,6 +7,8 @@ public class Employee {
     private String email;
     private String title;
 
+    public Employee() {} // empty constructor for Spring
+
     public Employee(String employee_id, String first_name, String last_name, String email, String title) {
         this.employee_id = employee_id;
         this.first_name = first_name;
@@ -20,4 +22,10 @@ public class Employee {
     public String getLast_name() { return last_name; }
     public String getEmail() { return email; }
     public String getTitle() { return title; }
+
+    public void setEmployee_id(String employee_id) { this.employee_id = employee_id; }
+    public void setFirst_name(String first_name) { this.first_name = first_name; }
+    public void setLast_name(String last_name) { this.last_name = last_name; }
+    public void setEmail(String email) { this.email = email; }
+    public void setTitle(String title) { this.title = title; }
 }
